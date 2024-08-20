@@ -99,21 +99,23 @@ body {
   position: relative;
   top: 10vh;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.six img {
-  display: inline-block;
+.six .profile-picture {
+  position: relative;
   height: 350px;
   max-width: 100%;
-  /* height: auto; */
 }
 
 .six .hat {
-  left: 41.5%;
-  position: absolute;
-  /* transform: scale(0.1); */
-  top: -35%;
   width: 80px;
+  justify-content: center;
+  top: 20%;
+
+
 }
 
 .baloons img {
@@ -226,29 +228,8 @@ body {
 }
 
 /* Media Queries */
-@media screen and (max-height: 1000px) {
-  .six .hat {
-    left: 40%;
-  }
-}
 
-@media screen and (max-height: 800px) {
-  .six .hat {
-    left: 37%;
-  }
-}
 
-@media screen and (max-height: 700px) {
-  .six .hat {
-    left: 32%;
-  }
-}
-
-@media screen and (max-height: 850px) and (max-width: 450px) {
-  .six .hat {
-    left: 32%;
-  }
-}
 
 @media screen and (max-width: 500px) {
   .container {
